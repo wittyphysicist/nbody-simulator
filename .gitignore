@@ -1,0 +1,16 @@
+# Compiled binary
+main
+
+# Generated data
+*.csv
+
+# Object files
+*.o
+*.out
+
+# macOS clutter
+.DS_Store
+
+# Python cache
+__pycache__/
+*.pyc
