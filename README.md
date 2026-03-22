@@ -9,12 +9,10 @@ gravity models and the Hubble tension.
 
 ## Motivation
 
-My Master's thesis (*Ludwig-Maximilians-Universität München, 2025*) investigated
-whether late-time modifications to gravity could resolve the Hubble tension —
-the ~5σ discrepancy between early- and late-universe measurements of the Hubble
-constant. This simulator brings that research down to the N-body scale: the same
-gravity models studied analytically in the thesis can now be applied to particle
-simulations and their orbital effects observed directly.
+As a part of the course *Programming in a Scientific Environment with C++* (Universität zu Köln, 2026),
+I created this N-body simulation. This simulator brings that research down to the N-body scale: the same
+gravity models studied analytically in the thesis can now be applied to particle simulations and their
+orbital effects observed directly.
 
 ---
 
