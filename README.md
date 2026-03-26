@@ -1,16 +1,23 @@
 # N-Body Gravitational Simulator
+
 A high-performance N-body gravitational simulator written in C++, featuring a
 pluggable gravity model system, a symplectic leapfrog integrator, and OpenMP
-parallelisation. Built as an extension of Master's thesis research into modified
-gravity models and the Hubble tension.
+parallelisation.
 
-# Motivation
-My Master's thesis (Ludwig-Maximilians-Universität München, 2025) investigated
-whether late-time modifications to gravity could resolve the Hubble tension —
-the ~5σ discrepancy between early- and late-universe measurements of the Hubble
-constant. This simulator brings that research down to the N-body scale: the same
-gravity models studied analytically in the thesis can now be applied to particle
-simulations and their orbital effects observed directly.
+---
+
+## Motivation
+
+During my Master's thesis at Ludwig-Maximilians-Universität München (2025), I
+investigated whether late-time modifications to gravity could resolve the Hubble
+tension — the ~5σ discrepancy between early- and late-universe measurements of
+the Hubble constant. That work was analytical and statistical, using Bayesian
+inference on cosmological datasets.
+
+This simulator was built in March 2026 as a personal C++ project, inspired by
+that research. It brings the same class of gravity modifications down to the
+N-body scale: rather than constraining models statistically, here their orbital
+effects can be observed directly in simulation.
 
 ---
 
@@ -41,16 +48,6 @@ pulling Earth into a tighter orbit. Both simulations conserve energy well.
 |---|---|
 | Newtonian gravity | 9.58 × 10⁻¹³ % |
 | Modified gravity (α=0.1, λ=1 AU) | 0.014 % |
-
-### OpenMP performance (Apple M-series, 10 cores)
-
-| Particles | 1 thread | 10 threads | Speedup |
-|---|---|---|---|
-| 100 | — | — | — |
-| 500 | — | — | — |
-| 1000 | — | — | — |
-
-*Benchmark in progress — run `scripts/benchmark.sh` to populate.*
 
 ---
 
